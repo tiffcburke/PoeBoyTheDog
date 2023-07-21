@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poe Boy the Dog - Dogsite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <!--awesome font 4 cdn link*/-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!--font awesome for star rating*/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+          color: orange;
+        }
+        </style>
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!--x icon-->
+                <i class="fa fa-times" onclick ="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT POE</a></li>
+                </ul>
+            </div>
+            <!--menu icon*/-->
+            <i class="fa fa-bars" onclick ="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>Poe Boy the Dog</h1>
+    <p>Poe Boy is my first puppy ever and the star of my first website!
+    </p>
+    <a href="contact.html" class="hero-btn">Say Hi to Poe!</a>
+
+
+
+</section>
+
+<!--- MEET THE PARENTS for under the main page(scroll) -->
+
+<section class="equipment"> 
+    <h1>Meet the Parents</h1>
+    <p>Can't have a Poe without two great pet parents!</p>
+
+    <div class="row">
+            <div class="parents-col">
+            <img src="images/MomHome.jpg" alt="West Highland Terrier"> 
+            </div>
+        
+            <div class="parents-col">
+            <img src="images/DadHome.jpg" alt="West Highland Terrier">
+             </div> 
+        
+        
+    </div>
+
+</section>
+
+<!--- Pictures for under the main page(scroll) -->
+
+<section class="pictures">
+    <h1>Poe Pics</h1>
+    <p>The handsome boy, Poe himself.</p>
+
+    <div class="row">
+       <div class="pictures-col">
+           <img src="images/home1.jpg" alt="West Highland Terrier">   
+       </div>
+       <div class="pictures-col">
+        <img src="images/home2.jpg" alt="Westie">   
+    </div>
+    <div class="pictures-col">
+        <img src="images/home3.jpg" alt="Terrier Puppy">   
+    </div>
+    </div>
+</section>
+
+
+<!--- Stats for under the main page(scroll) -->
+<section class="HomeStats">
+    <h1>Westie Ratings</h1>
+    <p>A quick snap shot of Poe!</p>
+
+    <div class ="row">
+        <div class="stats-col">
+            <h2>Potty Training</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span> 
+            <p>He hasn't had an accident since he was potty trained!</p>
+        </div>
+        <div class="stats-col">
+            <h2>Energy Level</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> 
+            <p>Poe has bursts of energy but falls asleep at 7:30pm like clockwork.</p>
+        </div>
+        <div class="stats-col">
+            <h2>Car Rides</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span> 
+            <p>One of Poe's favorite activites is a windows down car ride.</p>
+        </div>
+    </div>
+</section>
+
+<!--- Contact us for under the main page(scroll) -->
+<section class="ctc">
+    <h1>Thanks for checking out Poe's page</h1>
+    <a href="https://www.instagram.com/poeboythedog/" class="hero-btn">Follow Poe on Instagram</a>
+</section>
+
+<!--- Footer home page scroll -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>I wanted to make my first website with something fun and easy.<br>Poe really had no choice in the matter since he only understands puppy talk.<br>This site was created using simple html, css, and java script with VSCode.<br>Thank you to everyone who supported me!</p>
+    <div class="icons">
+        <a href = "https://www.instagram.com/poeboythedog/"> 
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href = "https://www.linkedin.com/in/tiffany-burke-a98266146/">
+            <i class="fa fa-linkedin"></i>
+        </a>  
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+
+
+
+
+
+
+
+
+
+<!--JavaScript for the x and menu icons: this makes each icon a button-->
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+ </script>
+
+</body>
+</html>

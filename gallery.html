@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poe Boy the Dog - Dogsite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <!--awesome font 4 cdn link*/-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!--font awesome for star rating*/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+          color: orange;
+        }
+        </style>
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!--x icon-->
+                <i class="fa fa-times" onclick ="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT POE</a></li>
+                </ul>
+            </div>
+            <!--menu icon*/-->
+            <i class="fa fa-bars" onclick ="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>The Gallery</h1>
+    <p>A photo gallery from day one to present day</p>
+</div>    
+</section>
+
+
+<!--<section class="pictures">
+    <h1>Poe Pics</h1>
+    <p>The handsome boy, Poe himself.</p>
+
+    <div class="row01">
+       <div class="pictures-col">
+           <img src="images/home1.jpg" alt="West Highland Terrier">   
+       </div>
+       <div class="pictures-col">
+        <img src="images/home2.jpg" alt="Westie">   
+    </div>
+    <div class="pictures-col">
+        <img src="images/home3.jpg" alt="Terrier Puppy">   
+    </div>
+    </div>
+</section>-->
+
+<!--row 0-->
+ <section class="gallery"> 
+    <div class="row">
+        <div class="pictures-coll">
+            <img src="images/gallery01.jpg" alt="West Highland Terrier"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count1()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount1" type="number" value="0">
+                </div> 
+            </div> 
+        </div>
+        <div class="pictures-coll">
+         <img src="images/gallery02.jpg" alt="Westie"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count2()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount2" type="number" value="0">
+                </div> 
+            </div>
+         </div>
+        <div class="pictures-coll">
+         <img src="images/gallery03.jpg" alt="Terrier Puppy"> 
+             <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count3()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount3" type="number" value="0">
+                </div> 
+            </div>  
+        </div>
+     </div>
+ </section>  
+
+ <!--row 1-->
+ <section class="gallery"> 
+    <div class="row">
+        <div class="pictures-coll">
+            <img src="images/Gallery11.jpg" alt="West Highland Terrier"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count11()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount11" type="number" value="0">
+                </div> 
+            </div> 
+        </div>
+        <div class="pictures-coll">
+         <img src="images/Gallery12.jpg" alt="Westie"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count12()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount12" type="number" value="0">
+                </div> 
+            </div>
+         </div>
+        <div class="pictures-coll">
+         <img src="images/Gallery13.JPG" alt="Terrier Puppy"> 
+             <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count13()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount13" type="number" value="0">
+                </div> 
+            </div>  
+        </div>
+     </div>
+ </section>  
+
+ 
+ <!--row 2-->
+ <section class="gallery"> 
+    <div class="row">
+        <div class="pictures-coll">
+            <img src="images/Gallery21.jpg" alt="West Highland Terrier"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count21()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount21" type="number" value="0">
+                </div> 
+            </div> 
+        </div>
+        <div class="pictures-coll">
+         <img src="images/Gallery32.jpg" alt="Westie"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count22()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount22" type="number" value="0">
+                </div> 
+            </div>
+         </div>
+        <div class="pictures-coll">
+         <img src="images/Gallery23.jpg" alt="Terrier Puppy"> 
+             <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count23()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount23" type="number" value="0">
+                </div> 
+            </div>  
+        </div>
+     </div>
+ </section>  
+  <!--row 3-->
+  <section class="gallery"> 
+    <div class="row">
+        <div class="pictures-coll">
+            <img src="images/Gallery31.jpg" alt="West Highland Terrier"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count31()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount31" type="number" value="0">
+                </div> 
+            </div> 
+        </div>
+        <div class="pictures-coll">
+         <img src="images/home3.jpg" alt="Westie"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count32()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount32" type="number" value="0">
+                </div> 
+            </div>
+         </div>
+        <div class="pictures-coll">
+         <img src="images/Gallery33.jpg" alt="Terrier Puppy"> 
+             <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count33()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount33" type="number" value="0">
+                </div> 
+            </div>  
+        </div>
+     </div>
+ </section>  
+ <!--row 4-->
+ <section class="gallery"> 
+    <div class="row">
+        <div class="pictures-coll">
+            <img src="images/Gallery41.jpg" alt="West Highland Terrier"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count41()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount41" type="number" value="0">
+                </div> 
+            </div> 
+        </div>
+        <div class="pictures-coll">
+         <img src="images/Gallery42.jpg" alt="Westie"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count42()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount42" type="number" value="0">
+                </div> 
+            </div>
+         </div>
+        <div class="pictures-coll">
+         <img src="images/Gallery43.jpg" alt="Terrier Puppy"> 
+             <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count43()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount43" type="number" value="0">
+                </div> 
+            </div>  
+        </div>
+     </div>
+ </section> 
+  <!--row 5-->
+  <section class="gallery"> 
+    <div class="row">
+        <div class="pictures-coll">
+            <img src="images/Gallery51.JPG" alt="West Highland Terrier"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count51()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount51" type="number" value="0">
+                </div> 
+            </div> 
+        </div>
+        <div class="pictures-coll">
+         <img src="images/Gallery52.jpg" alt="Westie"> 
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count52()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount52" type="number" value="0">
+                </div> 
+            </div>
+         </div>
+        <div class="pictures-coll">
+         <img src="images/gallery53.jpg" alt="Terrier Puppy"> 
+             <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count53()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount53" type="number" value="0">
+                </div> 
+            </div>  
+        </div>
+     </div>
+ </section>
+ <!--row 6--> 
+ <section class="gallery"> 
+    <div class="row">
+        <div class="pictures-coll">
+            <img src="images/Gallery6.PNG" alt="West Highland Terrier">
+            <div class = "wrapper">
+                <div class = "heart">
+                    <i onclick="count61()" class="fa fa-heart-o fa-lg icon"></i>
+                    <br>
+                    <input id="heartCount61" type="number" value="0">
+                </div> 
+            </div> 
+        </div>
+        <div class="pictures-coll">
+        <img src="images/Gallery62.jpg" alt="West Highland Terrier">
+                <div class = "wrapper">
+                    <div class = "heart">
+                        <i onclick="count61()" class="fa fa-heart-o fa-lg icon"></i>
+                        <br>
+                        <input id="heartCount61" type="number" value="0">
+                    </div> 
+                </div> 
+        </div>
+        <div class="pictures-coll">
+            <img src="images/Gallery63.jpg" alt="West Highland Terrier">
+                    <div class = "wrapper">
+                        <div class = "heart">
+                            <i onclick="count61()" class="fa fa-heart-o fa-lg icon"></i>
+                            <br>
+                            <input id="heartCount61" type="number" value="0">
+                        </div> 
+                    </div> 
+            </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!--- Footer home page scroll -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>I wanted to make my first website with something fun and easy.<br>Poe really had no choice in the matter since he only understands puppy talk.<br>This site was created using simple html, css, and java script with VSCode.<br>Thank you to everyone who supported me!</p>
+    <div class="icons">
+        <a href = "https://www.instagram.com/poeboythedog/"> 
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href = "https://www.linkedin.com/in/tiffany-burke-a98266146/">
+            <i class="fa fa-linkedin"></i>
+        </a>  
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+
+
+
+
+
+
+
+
+
+<!--JavaScript for the x and menu icons: this makes each icon a button-->
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+ </script>
+
+<script src="java.js"></script>
+</body>
+</html>

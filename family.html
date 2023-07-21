@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poe Boy the Dog - Dogsite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <!--awesome font 4 cdn link*/-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!--font awesome for star rating*/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+          color: orange;
+        }
+        </style>
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!--x icon-->
+                <i class="fa fa-times" onclick ="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT POE</a></li>
+                </ul>
+            </div>
+            <!--menu icon*/-->
+            <i class="fa fa-bars" onclick ="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Poe's Fur Family</h1>
+            <p>More to come!</p>
+        </div>    
+
+
+</section>
+
+<!--- Family page -->
+
+<section class="family"> 
+    <h1>Let the introductions begin!</h1>
+
+
+    <div class="row">
+            <div class="family-col">
+            <img src="images/GrandmaFamily.jpg" alt="Cat and Dog BFF"> 
+            <p>Cali is Poe's oldest sister with about a 12 year age gap. Needless to say, Poe likes Cali a whole lot more than Cali likes Poe. </p>
+            </div>
+        
+            <div class="family-col">
+            <img src="images/Cuz1Family.jpg" alt="Two Dogs">
+            <p>This Honey pup is Poe's cousin! Honey loves long walks with Poe mostly because he cannot keep up with her speed.</p>
+             </div> 
+        
+        
+    </div>
+    <div class="row">
+        <div class="family-col">
+        <img src="images/Cuz2Family.jpg" alt="Small Dogs"> 
+        <p> Next up is Poe's cousin Maple. Maple and Poe love to chase eachother around in circles.</p>
+        </div>
+    
+        <div class="family-col">
+        <img src="images/SisFamily.jpg" alt="Cat and Dog Friends">
+        <p> Last but certainly not least is Poe's favorite older sister Nacho. Poe loves to take all of Nacho's toys and in return Nacho sleeps in Poe's crate. A beautiful unexpected relationship. </p>
+         </div> 
+    
+    
+</div>
+
+</section>
+
+
+
+
+
+<!---Might want to use this on another page?
+    <div class="skills">
+    <h1>Skill Set</h1>
+    <p>Hover over each skill to understand why. Overall a fine dog indeed!</p>
+    <div class="bar five"  
+        title = "Poe is an A1 sleeper. He falls asleep around 7:30 every night and sleeps throughout the night with no problem." 
+        data-skill="Sleeping"></div>
+    <div class="bar two" title = "Poe is afraid of big dogs in dog park" data-skill="Dog Parks"></div>
+    <div class="bar three" title="It took awhile to get Poe walking at human speed. Now he pulls and stops at every mailbox" data-skill="Walking"></div>
+    <div class="bar one" data-skill="Pulling"></div>
+    <div class="bar three" data-skill="Barking"></div>
+    <div class="bar five" data-skill="Car rides"></div>
+    <div class="bar three" data-skill="Other Dogs"></div>
+    <div class="bar three" data-skill="Energy Level"></div>
+    <div class="bar four" data-skill="Eating out"></div>
+    <div class="bar four" data-skill="Cats"></div>
+    <div class="bar three" data-skill="Kill Drive"></div>
+    <div class="bar four" data-skill="Chewing"></div>
+    <div class="bar five" data-skill="Crate Training"></div>
+    <div class="bar five" data-skill="Strangers"></div>
+    <div class="bar four" data-skill="Potty Training"></div>
+
+  </div>-->
+
+
+
+
+
+
+<!--- Footer home page scroll -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>I wanted to make my first website with something fun and easy.<br>Poe really had no choice in the matter since he only understands puppy talk.<br>This site was created using simple html, css, and java script with VSCode.<br>Thank you to everyone who supported me!</p>
+    <div class="icons">
+        <a href = "https://www.instagram.com/poeboythedog/"> 
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href = "https://www.linkedin.com/in/tiffany-burke-a98266146/">
+            <i class="fa fa-linkedin"></i>
+        </a>  
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+
+
+
+<!--JavaScript for the x and menu icons: this makes each icon a button-->
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+ </script>
+
+</body>
+</html>
